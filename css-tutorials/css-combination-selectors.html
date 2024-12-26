@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2,p{
+            color: darkorchid;
+        }
+
+        #d1 p{
+            color: chocolate;
+        }
+
+        #d2 > div{
+            color: rgb(27, 44, 75);
+        }
+
+        #d3 + div{
+            color: olivedrab;
+        }
+
+        #d4 ~ div{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi architecto autem ab amet maxime totam! Magni, culpa aut. Sint iure suscipit quod blanditiis repellendus beatae dolorum ipsam, maxime numquam.
+    </p>
+
+    <div id="d1">
+        <p>This is also a descendant</p>
+        <div>
+            <p>
+                this is descendant of div
+            </p>
+        </div>
+    </div>
+
+    
+    <div id="d2">
+        <p>This is child of d2</p>
+        <div>
+            this is random text
+            <p>
+                this is descendant of div
+            </p>
+        </div>
+    </div>
+
+    <div id="d3">
+        This is d3
+    </div>
+
+    <div id="d4">
+        This is next sibling of d3
+    </div>
+
+    <div id="d5">
+        This is d5
+    </div>
+
+
+    <div id="d6">
+        This is d6
+    </div>
+</body>
+</html>
