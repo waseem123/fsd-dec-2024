@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #starting::first-letter{
+            font-size: 48px;
+        }
+
+        p::first-line{
+            color: red;
+        }
+
+        p::before{
+            content: url('img/boat.jpg');
+        }
+
+        p::after{
+            content: url('img/smartwatch.jpg');
+        }
+
+        ::marker{
+            color: rgb(55, 0, 128);
+            font-style: italic;
+            font-family: cursive;
+        }
+
+        ::selection{
+            background-color: rgb(17, 121, 139);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="starting">
+        Many years ago, there was a king. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti eum necessitatibus temporibus ea atque, quas autem magni! Doloribus odio officia recusandae architecto, magnam voluptatum eos porro aspernatur ipsam molestiae.
+    </p>
+
+    <p>This is second paragraph</p>
+    <p>This is third paragraph</p>
+
+    <ul>
+        <li>First Letter</li>
+        <li>First Line</li>
+        <li>Before</li>
+        <li>After</li>
+        <li>Marker</li>
+        <li>Selection</li>
+    </ul>
+
+    <img width="300px" src="img/people.jpg" alt="">
+
+    <ol>
+        <li>First Letter</li>
+        <li>First Line</li>
+        <li>Before</li>
+        <li>After</li>
+        <li>Marker</li>
+        <li>Selection</li>
+    </ol>
+</body>
+</html>

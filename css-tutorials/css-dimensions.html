@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: coral;
+            color: rgb(2, 2, 77);
+            width: 50%;
+            height: auto;
+        }
+
+        img {
+            width: 25%;
+            height: 300px;
+        }
+
+        div>img {
+            width: 100%;
+            height: auto;
+        }
+
+        .imgheight{
+            height: 500px;
+        }
+
+        .imgheight > img{
+            width: 100%;
+            height: inherit;
+        }
+
+        .myclass{
+            background-color: purple;
+            height: 300px;
+            width: 200px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt molestiae sint totam debitis nostrum!
+        Consequuntur minus nulla cumque quos magnam voluptatibus quam cupiditate vel harum neque doloremque
+        necessitatibus, labore hic repellat explicabo corrupti nesciunt maiores eaque fuga deserunt corporis quae
+        dolores sint! Vitae modi enim quae, deserunt numquam, quasi natus amet debitis laboriosam vero molestias
+        repellat inventore accusamus officia aspernatur cumque esse voluptatum consectetur culpa nihil nisi? Iste, omnis
+        vero tempora inventore amet libero similique, eum ab laudantium porro commodi numquam sed. Molestias, dolorem
+        quasi alias commodi dolore voluptatibus molestiae eius esse qui velit aut obcaecati facere? Rem beatae unde
+        earum expedita exercitationem suscipit recusandae, ad neque est dolor debitis, provident a similique et. Nulla,
+        nostrum eaque, iusto fuga beatae eius facilis nisi tenetur fugit molestiae esse aliquam voluptates libero quo
+        voluptatum. Rerum unde deserunt excepturi nihil, quisquam doloribus facere vero dolor. Amet, autem ab. Libero
+        obcaecati quos, consequuntur iusto adipisci omnis magnam debitis modi, vel minima optio amet assumenda accusamus
+        atque ducimus provident temporibus voluptatem sed. Mollitia soluta porro similique temporibus dolore ullam
+        voluptate nobis culpa, doloremque aut quasi vel? Tenetur iure corporis dolorum quasi voluptatum aliquam,
+        exercitationem ipsam soluta laborum aspernatur, ipsa numquam perferendis aperiam assumenda? Doloremque,
+        excepturi.
+    </div>
+
+    <img src="img/server.jpg" alt="">
+    <img src="img/children.jpg" alt="">
+    <div>
+        <img src="img/woman.jpg" alt="">
+    </div>
+
+    <div class="imgheight">
+        <img src="img/schoolbus.jpg" alt="">
+    </div>
+
+    <div class="imgheight">
+        <img src="img/shizuka.png" alt="">
+    </div>
+
+    <div class="myclass"></div>
+    <div class="myclass" style="background-color: red;"></div>
+</body>
+
+</html>
