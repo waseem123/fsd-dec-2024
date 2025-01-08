@@ -1,0 +1,6 @@
+1. Linear Gradient
+    in a specific direction
+2. Radial Gradient
+    around a radius
+3. Conic Gradient
+    using angles

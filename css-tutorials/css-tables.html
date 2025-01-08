@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+
+        table{
+            width: 100%;
+        }
+
+        tbody>tr:hover{
+            background-color: rgba(63, 32, 173, 0.705);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Marks</th>
+                <th>Visit Profile</th>
+                <th>Profile Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alex</td>
+                <td>London</td>
+                <td>98</td>
+                <td>
+                    <a href="https://www.google.com">View</a>
+                </td>
+                <td>
+                    <img width="40px" height="40px" src="img/shizuka.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Roger</td>
+                <td>Paris</td>
+                <td>85</td>
+                <td>
+                    <a href="https://www.google.com">View</a>
+                </td>
+                <td>
+                    <img width="40px" height="40px" src="img/shizuka.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Peter</td>
+                <td rowspan="2">LA</td>
+                <td>96</td>
+                <td>
+                    <a href="https://www.google.com">View</a>
+                </td>
+                <td>
+                    <img width="40px" height="40px" src="img/shizuka.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>John</td>
+                <td>30</td>
+                <td>
+                    <a href="https://www.google.com">View</a>
+                </td>
+                <td>
+                    <img width="40px" height="40px" src="img/shizuka.png" alt="">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Total 4 Students Present</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

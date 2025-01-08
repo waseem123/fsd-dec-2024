@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient on Image</title>
+    <style>
+        div {
+            width: 700px;
+            height: 300px;
+            border: 1px solid black;
+            background-image: linear-gradient(to top right, orange, rgb(34, 10, 99), purple);
+            /* Adding gradient to the div background */
+        }
+
+        img {
+            width: 30%;
+            display: block;
+            margin: auto;
+
+            /* Applying gradient as a mask */
+            mask-image: linear-gradient(to bottom, orange 0%, red 100%);
+            -webkit-mask-image: linear-gradient(to bottom, orange 0%, red 100%);
+
+            /* Optional: Make image semi-transparent to blend */
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="img/shizuka.png" alt="Shizuka Image">
+    </div>
+</body>
+
+</html>

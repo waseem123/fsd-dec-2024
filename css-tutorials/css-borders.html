@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 200px;
+
+            /* border-top-color: black;
+            border-top-width: 2px;
+            border-top-style:solid;
+
+            border-bottom-color: black;
+            border-bottom-width: 2px;
+            border-bottom-style:solid;
+
+            border-left-color: black;
+            border-left-width: 2px;
+            border-left-style:solid;
+
+            border-right-color: black;
+            border-right-width: 2px;
+            border-right-style:solid; */
+
+            border : 5px solid red;
+
+            /* border-top: 2px solid orangered;
+            border-bottom: 5px solid green;
+            border-left: 3px dashed purple;
+            border-right: 5px double black; */
+
+            margin: 8px;
+
+        }
+
+        #d1{
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+        }
+
+        #d2{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+
+            background-image: url('img/student.jpg');
+            background-position: center;
+            background-size: cover;
+            border-color: #00FF00;
+        }
+
+        #d2>div{
+            margin-left: 210px;
+            display: none;
+        }
+
+        #d2:hover div{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <div id="d1"></div>
+
+    <div id="d2">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, deleniti.</div>
+    </div>
+
+
+</body>
+</html>
