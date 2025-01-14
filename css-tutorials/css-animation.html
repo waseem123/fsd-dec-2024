@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            left: 100px;
+            top: 100px;
+            position: absolute;
+            border-radius: 4px;
+            
+        }
+
+        div:hover{
+            animation-name: myanimation;
+            animation-duration: 2s;
+            /* animation-delay: 3s; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-direction: alternate-reverse; */
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        /* @keyframes myanimation {
+            from{
+                background-color: black;
+            }
+            to{
+                background-color: aquamarine;
+                transform: translate(100px,0px) scale(2) rotate(90deg);
+            }
+        } */
+
+        @keyframes myanimation {
+            0%{
+                background-color: black;
+            }
+
+            25%{
+                background-color: blue;
+                transform: translate(50px);
+            }
+
+            50%{
+                background-color: green;
+                transform: translate(100px);
+            }
+
+            75%{
+                background-color: skyblue;
+                transform: scale(2);
+            }
+
+            100%{
+                background-color: red;
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            background-color: rgb(48, 48, 135);
+            height: 100px;
+            width: 100px;
+            /* transform: translate(0,200px); */
+            /* transform: translateY(600px); */
+        }
+
+        #d2{
+            background-color: rgb(135, 48, 48);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            /* transform: scale(0.5); */
+            transform: scaleY(0.5);
+        }
+
+        #d3{
+            background-color: darkslategrey;
+            width: 100px;
+            height: 50px;
+            margin: 100px;
+            color: white;
+            /* transform: rotate(360deg); */
+            transform: rotateY(180deg);
+        }
+
+        img:hover{
+            transform: rotateY(180deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3">D3</div>
+
+    <img src="img/shizuka.png" alt="">
+</body>
+</html>
