@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: maroon;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        @media screen and (min-width:500px) {
+            div {
+                background-color: darkblue;
+                width: 500px;
+                height: 500px;
+                animation-name: myanimation;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+
+
+        @keyframes myanimation {
+            from {
+                background-color: blue;
+            }
+
+            to {
+                background-color: maroon;
+                border-radius: 50%;
+            }
+        }
+
+        img{
+            width: 50%;
+        }
+
+        @media screen and (max-width:500px){
+            img{
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+    <img src="img/classroom.jpg" alt="">
+    <img src="img/motorcycle.jpg" alt="">
+</body>
+
+</html>
