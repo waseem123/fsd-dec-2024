@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+}
+.navcontainer{
+    width: 100%;
+    display: flex;
+    background-color: rgb(13, 131, 74);
+}
+
+.brandname{
+    padding: 8px;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.brandlink{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    margin-left: auto;
+    display: flex;
+}
+.menuitem{
+    padding: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navlink{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+.menuitem:hover{
+    background-color: white;
+}
+.menuitem:hover .navlink{
+    color: black;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, 0.532);
+}
+
+.active .navlink{
+    color: black;
+}
+
+.product-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.product{
+    width: 40%;
+    margin: 16px;
+    box-shadow: 2px 2px 8px black ;
+}
+
+.product-title{
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+.product-desc{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(62, 55, 55);
+}
+
+.product-image{
+    width: 100%;
+    height: 150px;
+}
+
+.pricecontainer{
+    padding: 8px;
+}
+
+.deletedprice{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: darkgray;
+
+}
+.price{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+@media screen and(max-width:500px){
+    .product{
+        width: 25%;
+    }
+}
