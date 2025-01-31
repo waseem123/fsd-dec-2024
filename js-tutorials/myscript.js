@@ -1,0 +1,1 @@
+document.write("This message is getting loaded from external Javascript.")

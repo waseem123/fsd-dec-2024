@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var myarray = [1,2,3,4,5,6]
+    document.writeln(myarray)
+    document.writeln("<hr>")
+
+    for(var i=0;i<myarray.length;i++){
+        document.writeln(myarray[i]+"<br>")
+    }
+    document.writeln("<hr>")
+
+    myarray.forEach(x => {
+        document.writeln(x)
+    });
+    document.writeln("<hr>")
+
+</script>
+
+<script>
+    var students = ['Peerahmed','Sanjana','Rajni','Shaheen','Maria','Kamal','Sahil']
+    for (var i = 0; i < students.length; i++) {
+        document.writeln(students[i]+"<br>")
+    }
+    document.writeln("<hr>")
+    students.forEach(s => {
+        document.writeln(s)
+    });
+</script>
+</html>

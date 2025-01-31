@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    following is an example of Fibonacci Series
+    0,1,1,2,3,5,8,13,21,34..................
+    <hr>
+</body>
+
+<script>
+    var num = 5 ;
+    var oldnum = 0
+    var currentnum = 1
+    document.writeln(`${oldnum},`)
+    document.writeln(`${currentnum},`)
+    for (i = 1; i <= num; i++) {
+        var newnum = oldnum + currentnum;
+        document.writeln(`${newnum},`)
+        oldnum = currentnum
+        currentnum = newnum
+    }
+    document.write("<hr>")
+</script>
+
+<script>
+    var num = 5;
+    var oldnum = 0
+    var currentnum = 1
+    for (i = 1; i <= num; i++) {
+        var newnum = oldnum + currentnum;
+        
+        oldnum = currentnum
+        currentnum = newnum
+    }
+    document.writeln(`${newnum}`)
+    document.write("<hr>")
+</script>
+</html>

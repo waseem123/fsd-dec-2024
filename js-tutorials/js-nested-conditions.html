@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success {
+            color: #14a952;
+        }
+
+        .warning {
+            color: #a8c417;
+        }
+
+        .danger {
+            color: #c41720;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    var age = prompt("ENTER YOUR AGE")
+    if (age >= 18) {
+        var voterid = confirm("DO YOU HAVE VOTER ID?")
+        if (voterid == true) {
+            document.write("<p class='success'>CONGRATULATIONS! YOU CAN VOTE.</p>")
+        } else {
+            document.write("<p class='warning'>SORRY! YOU CAN NOT VOTE.</p>")
+        }
+    } else {
+        document.write("<p class='danger'>NOT ELIGIBLE TO VOTE.</p>")
+    }
+</script>
+
+</html>

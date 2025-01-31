@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var num = 4646
+    var temp = num // 464
+    var reverse = 0
+
+    while(temp!=0){
+        var r = temp % 10 // 4
+        reverse = (reverse * 10) + r //464
+        temp = parseInt(temp / 10) // 0
+    }
+
+    document.write(`Reverse of ${num} is ${reverse}<br>`)
+
+    if(num==reverse){
+        document.write(`${num} is PALINDROME`)
+    }else{
+        document.write(`${num} is not PALINDROME`)
+    }
+</script>
+</html>

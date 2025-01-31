@@ -1,0 +1,14 @@
+class Addition{
+    public static void main(String[] args){
+        int x = 100;
+        int y = 65.32;
+        int z = x + y;
+        System.out.println(z)f6fdtg6f
+    }
+}
+
+-----------------------JS-----------------------
+var x = 100
+var y = "200"
+var z = x + y
+console.log(z)
