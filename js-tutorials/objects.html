@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var student = {
+        rollno: 101,
+        name: 'Alexandar',
+        city: 'Paris',
+        marks:[78,94,68],
+        subjectwisemarks:{
+            c:78,
+            cpp:94,
+            java:68
+        }
+    }
+
+    document.writeln(student + '<br>')
+    console.log(student)
+
+    document.writeln(`ROLL NO - ${student['rollno']}<br>`)
+    document.writeln(`NAME    - ${student['name']}<br>`)
+    document.writeln(`CITY - ${student['city']}<hr>`)
+
+    document.writeln(`ROLL NO - ${student.rollno}<br>`)
+    document.writeln(`NAME    - ${student.name}<br>`)
+    document.writeln(`CITY - ${student.city}<br>`)
+    document.writeln(`MARKS - ${student.marks[0]}<br>`)
+
+    
+    document.writeln(`C - ${student.subjectwisemarks.c}<br>`)
+    document.writeln(`CPP - ${student.subjectwisemarks.cpp}<br>`)
+    document.writeln(`Java - ${student.subjectwisemarks.java}<br>`)
+    document.writeln(`All - ${student.subjectwisemarks}<br>`)
+
+</script>
+
+</html>

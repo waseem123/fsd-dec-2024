@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var student1 = {
+        rollno: 101,
+        name: 'Alexandar',
+        city: 'Paris',
+        marks: [78, 94, 68]
+    }
+
+    var student2 = {
+        rollno: 102,
+        name: 'Alexa',
+        city: 'London',
+        marks: [77, 93, 67]
+    }
+
+    var student3 = {
+        rollno: 103,
+        name: 'Roger',
+        city: 'Los Angeles',
+        marks: [76, 92, 65]
+    }
+
+    var allstudents = [student1, student2, student3]
+    console.log(allstudents)
+
+    for (var i = 0; i < allstudents.length; i++) {
+        document.writeln(`ROLL NO - ${allstudents[i]['rollno']}<br>`)
+        document.writeln(`NAME    - ${allstudents[i]['name']}<br>`)
+        document.writeln(`CITY - ${allstudents[i]['city']}<br>`)
+        document.writeln(`C - ${allstudents[i]['marks'][0]}<br>`)
+        document.writeln(`C++ - ${allstudents[i]['marks'][1]}<br>`)
+        document.writeln(`JAVA - ${allstudents[i]['marks'][2]}<hr>`)
+    }
+
+    allstudents.forEach(singlestudent => {
+        document.writeln(`ROLL NO - ${singlestudent['rollno']}<br>`)
+        document.writeln(`NAME    - ${singlestudent['name']}<br>`)
+        document.writeln(`CITY - ${singlestudent['city']}<br>`)
+        document.writeln(`C - ${singlestudent['marks'][0]}<br>`)
+        document.writeln(`C++ - ${singlestudent['marks'][1]}<br>`)
+        document.writeln(`JAVA - ${singlestudent['marks'][2]}<hr>`)
+    });
+
+</script>
+
+</html>

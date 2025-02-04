@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var myarr = [100,400,200,900,300,500]
+    document.writeln(myarr+"<br>")
+
+    var key = 3000
+    var ispresent = false;
+
+    for(var i=0;i<myarr.length;i++){
+        if(myarr[i] == key){
+            ispresent = true;
+            break;
+        }
+    }
+
+    if(ispresent == true){
+        document.writeln(`${key} IS PRESENT IN THE ARRAY.`)
+    }else{
+        document.writeln(`${key} IS NOT PRESENT IN THE ARRAY.`)
+    }
+</script>
+</html>
