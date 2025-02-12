@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv>p {
+            color: #47aa69;
+        }
+
+        #mydiv{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myheading">This is a heading</h1>
+    <p id="p1">
+        This tutorial begins where Tutorial 1 left off. We’ll set up the database, create your first model, and get a
+        quick introduction to Django’s automatically-generated admin site.
+    </p>
+    <p id="p2">
+        By default, the DATABASES configuration uses SQLite.
+        If you’re new to databases, or you’re just interested in trying Django,
+        this is the easiest choice. SQLite is included in Python, so you won’t need to install anything else to support
+        your database. When starting your first real project, however, you may want to use a more scalable database like
+        PostgreSQL,
+        to avoid database-switching headaches down the road.
+    </p>
+
+    <div id="mydiv">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro, quod laborum, sunt inventore saepe
+            doloribus excepturi vero, sequi est molestiae corrupti itaque rerum temporibus deleniti nostrum voluptates.
+            Ut, maxime!
+        </p>
+    </div>
+</body>
+<script>
+    var headingdata = document.getElementById('myheading')
+    console.log(headingdata)
+    console.log(headingdata.innerHTML)
+
+    var paragraphdata = document.getElementsByTagName('p')
+    for (var i = 0; i < paragraphdata.length; i++) {
+        console.log(paragraphdata[i].innerHTML)
+    }
+
+    console.log(headingdata.innerText)
+
+    var paragraphdata = document.getElementsByTagName('p')
+    for (var i = 0; i < paragraphdata.length; i++) {
+        console.log(paragraphdata[i].innerText)
+    }
+
+    var mydiv = document.getElementById('mydiv');
+    console.log(mydiv.innerHTML)
+    console.log(mydiv.innerText)
+
+    mydiv.innerText = "<p> THIS IS JUST A RANDOM TEXT. </p> "
+    mydiv.innerHTML = "<p> THIS IS SECOND PARAGRAPH</p>"
+</script>
+
+</html>

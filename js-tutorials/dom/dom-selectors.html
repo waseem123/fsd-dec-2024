@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myheading" class="red">This is a heading</h1>
+    <p id="p1">
+        This is a paragraph
+    </p>
+    <p id="p2" class="red" name="myparagraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam repellendus repudiandae expedita
+        voluptatibus vero aperiam mollitia adipisci voluptatem, dicta recusandae excepturi iure aspernatur iste quam
+        ducimus. Provident, voluptatem velit?
+    </p>
+
+    <img id="bulbimage" src="img/pic_bulboff.gif" alt="">
+</body>
+<script>
+    var img = document.getElementById('bulbimage')
+    var bulbOn = true
+    img.addEventListener('click', function () {
+        if (bulbOn===true) {
+            bulbOn = false
+            img.setAttribute('src', 'img/pic_bulbon.gif')
+        }
+        else {
+            bulbOn = true
+            img.setAttribute('src', 'img/pic_bulboff.gif')
+        }
+
+    })
+</script>
+
+</html>

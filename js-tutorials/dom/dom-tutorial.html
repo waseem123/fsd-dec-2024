@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TUTORIAL</title>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+
+    
+    <p id="myparagraph">
+        This text will now appear in the alert
+    </p>
+    <input type="text" id="myinput" placeholder="type something">
+    <button onclick="showmessage()">Click Me</button>
+</body>
+<script>
+    function showmessage(){
+        var myparagraph = document.getElementById('myparagraph').innerText;
+        var myinput = document.getElementById('myinput').value;
+        document.getElementById('myparagraph').innerText = myinput
+        alert(myinput)
+    }
+</script>
+</html>

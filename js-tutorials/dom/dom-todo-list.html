@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="ENTER THE TASK" id="taskname">
+    <button onclick="addtask()">Add</button>
+    <hr>
+    <ol id="todo"></ol>
+</body>
+<script>
+    var tasklist = "";
+    function addtask(){
+        var task = document.getElementById('taskname').value;
+        var mytodo = document.getElementById('todo')
+        tasklist += `<li>${task}</li>`
+        mytodo.innerHTML = tasklist
+        document.getElementById('taskname').value = ""
+    }
+</script>
+</html>

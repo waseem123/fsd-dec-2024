@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="mytext">
+    <button onclick="addtext()">Add Text</button>
+    <button onclick="cleartext()">Clear Text</button>
+
+    <p id="mydata"></p>
+</body>
+<script>
+    function addtext(){
+        var data = document.getElementById('mytext')
+        var mydata = document.getElementById('mydata')
+        mydata.innerHTML = data.value
+    }
+
+    function cleartext(){
+        document.getElementById('mytext').value = ""
+        document.getElementById('mydata').innerText = ""
+    }
+</script>
+</html>
