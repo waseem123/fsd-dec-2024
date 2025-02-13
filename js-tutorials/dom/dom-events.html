@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: purple;
+            color: white;
+            width: 150px;
+            padding: 8px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showmessage('Clicked')">Click Me</button>
+    <button ondblclick="showmessage('Double Clicked')">Double Click Me</button>
+    <div onmouseover="showmessage('mouseOver')">Mouse Over</div>
+    <div onmouseout="showmessage('mouse OUT')">Mouse OUT</div>
+    <div onmouseup="showmessage('Mouse is down')">
+        Click here to mouse down and up
+    </div>
+</body>
+<script>
+    function showmessage(message){
+        alert(message)
+    }
+</script>
+</html>

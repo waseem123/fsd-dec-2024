@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h2 id="mydiv">My Heading</h2>
+        <p id="myparagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum eius amet ab quaerat unde accusamus animi
+            beatae nisi, perferendis possimus! Consequuntur maxime perferendis iusto perspiciatis eum vero
+            exercitationem iure!
+        </p>
+    </div>
+    <button onclick="addcss()">Add CSS</button>
+    <button onclick="removecss()">Remove CSS</button>
+</body>
+<script>
+    var mydiv = document.getElementById('mydiv')
+    var mydiv = document.getElementById('mydiv')
+    var myparagraph = document.getElementById('myparagraph')
+    function addcss(){
+        mydiv.style.color = "red"
+        mydiv.style.borderRadius = "8px"
+        mydiv.style.borderWidth = "1px"
+        mydiv.style.borderStyle = "solid"
+        mydiv.style.borderColor = "red"
+        mydiv.style.padding = "8px"
+    }
+
+    function removecss(){
+        mydiv.style.color = ""
+        mydiv.style.borderRadius = ""
+        mydiv.style.borderWidth = ""
+        mydiv.style.borderStyle = ""
+        mydiv.style.borderColor = ""
+        mydiv.style.padding = ""
+    }
+</script>
+
+</html>
