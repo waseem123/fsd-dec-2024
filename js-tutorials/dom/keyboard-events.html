@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: rgb(49, 49, 198);
+            padding: 16px;
+            width: 200px;
+        }
+
+        input[type='text'] {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        #msg {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="myinput" type="text" onkeyup="display()" onfocus="showmsg()" onblur="hidemsg()"><br>
+        <span id="msg" style="color: white;">Enter your value here</span>
+        <select name="" id="st" onchange="showstate()">
+            <option value="mh">Maharashtra</option>
+            <option value="ka">Karnataka</option>
+            <option value="up">Uttar Pradesh</option>
+        </select>
+
+    </div>
+    <p id="mydata"></p>
+</body>
+<script>
+    var mydata = document.getElementById('mydata')
+    var myinput = document.getElementById('myinput')
+    var msg = document.getElementById('msg')
+    var st = document.getElementById('st')
+    function display() {
+        mydata.innerText = myinput.value
+        msg.style.display = 'none'
+    }
+
+    function showmsg() {
+        msg.style.display = 'inline'
+    }
+
+    function hidemsg() {
+        msg.style.display = 'none'
+    }
+
+    function showstate() {
+        // alert(st.selectedIndex)
+        var index = st.selectedIndex
+        // mydata.innerText = st.value + "-" + st.options[index].innerText
+        mydata.innerText = `${st.value} - ${st.options[index].innerText}`
+    }
+</script>
+
+</html>
