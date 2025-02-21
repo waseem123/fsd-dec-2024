@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Title</title>
+</head>
+<body>
+    <ol>
+        <li>Parent</li>
+        <li>FirstChild</li>
+        <li>LastChild</li>
+        <li>NextSibling</li>
+        <li>PreviousSibling</li>
+    </ol>
+    <div id="mydiv">
+        <a id="mylink" href="https://www.google.com">My link</a>
+        <h1 id="myheading">My Header</h1>
+        <h1 id="myparagraph">My Paragraph</h1>
+    </div>
+</body>
+<script>
+    var mydiv = document.getElementById('mydiv');
+    var mylink = document.getElementById('mylink');
+    var myheading = document.getElementById('myheading')
+
+    console.log(mydiv.parentNode)
+    console.log(mylink.parentNode)
+    console.log(myheading.parentNode)
+
+    console.log(mydiv.childNodes)
+    console.log(mydiv.childElementCount)
+    console.log(mydiv.firstElementChild)
+    console.log(mydiv.lastElementChild)
+    console.log(mydiv.hasChildNodes())
+
+    console.log(mydiv.nextElementSibling)
+    console.log(mydiv.previousElementSibling)
+    console.log(mylink.previousElementSibling)
+    console.log(myheading.nextElementSibling)
+
+    console.log(mylink.nextElementSibling)
+
+</script>
+</html>
