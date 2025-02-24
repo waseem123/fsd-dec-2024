@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: blueviolet;
+            padding: 8px;
+            margin: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="userinput">
+    <button onclick="add()">Add</button>
+
+</body>
+<script>
+    var userinput = document.getElementById('userinput')
+    var body = document.getElementsByTagName('body')[0]
+    var mydiv = document.createElement('div') // Node=>element
+    var mylist = document.createElement('ol') // Node=>element
+
+    function add() {
+        var liNode = document.createElement('li') // Node=>element
+        var text = document.createTextNode(userinput.value) // Node=>textNode     
+
+        if (body.firstElementChild === 'div') {
+            if (body.firstElementChild.firstElementChild === 'ol') {
+                liNode.appendChild(text)
+                mylist.appendChild(liNode)
+            } else {
+                mydiv.appendChild(mylist)
+                mylist.appendChild(liNode)
+                liNode.appendChild(text)
+            }
+        } else {
+            body.appendChild(mydiv)
+            mydiv.appendChild(mylist)
+            mylist.appendChild(liNode)
+            liNode.appendChild(text)
+        }
+    }
+</script>
+
+</html>

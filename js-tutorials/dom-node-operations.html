@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: black;
+            color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="userinput">
+    <button onclick="add()">Add</button>
+    <hr>
+    <div id="mydiv">
+        <p>This is a first paragraph</p>
+    </div>
+
+    <hr>
+    
+</body>
+<script>
+    var mydiv = document.getElementById('mydiv')
+    var userinput = document.getElementById('userinput')
+    function add(){
+        var pNode = document.createElement('p')
+        var text = document.createTextNode(userinput.value)
+        pNode.appendChild(text)
+        mydiv.appendChild(pNode)
+    }
+</script>
+</html>
